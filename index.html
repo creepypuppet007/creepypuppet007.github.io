@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhya Sundaran - Student Portfolio</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font import for 'Inter' */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1e40af',
+                        'secondary-gray': '#f3f4f6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-secondary-gray min-h-screen p-4 md:p-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- Header & Name Section -->
+        <header class="bg-white shadow-xl rounded-xl p-6 md:p-8 mb-8 border-t-4 border-primary-blue">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-2">Adhya Sundaran</h1>
+            <p class="text-xl text-primary-blue font-medium">Student & Future Engineer/Professional</p>
+            <p class="text-sm text-gray-500 mt-2">Kolangattukara, Kerala</p>
+        </header>
+
+        <!-- Main Content Grid (Responsive Layout) -->
+        <main class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+            <!-- Professional Summary & Contact Card (Spans 2 columns on large screens) -->
+            <div class="lg:col-span-2">
+                <section id="summary" class="bg-white p-6 rounded-xl shadow-lg h-full">
+                    <h2 class="text-2xl font-semibold text-gray-800 border-b-2 pb-3 mb-4">About Me</h2>
+                    <p class="text-gray-600 leading-relaxed">
+                        I am **Adhya Sundaran**, a dedicated and enthusiastic student from **Kolangattukara**. 
+                        I am currently focused on my academic pursuits at the Vidya Academy of Science and Technology. 
+                        I am committed to learning and developing skills in [Insert your major/field of interest here, e.g., computer science, electronics, or business]. 
+                    </p>
+                    <p class="mt-4 text-sm text-gray-500">
+                        This portfolio is currently a basic overview. I plan to expand it with specific projects, skills, and achievements soon!
+                    </p>
+                </section>
+            </div>
+
+            <!-- Education Card -->
+            <div>
+                <section id="education" class="bg-white p-6 rounded-xl shadow-lg h-full">
+                    <h2 class="text-2xl font-semibold text-gray-800 border-b-2 pb-3 mb-4">Education</h2>
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-900">Vidya Academy of Science and Technology (VAST)</h3>
+                        <p class="text-primary-blue font-medium mt-1">Current Student</p>
+                        <p class="text-gray-500 text-sm">Kolangattukara</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 mt-2 space-y-1">
+                            <li>[Insert your specific B.Tech/Course Name here]</li>
+                            <li>[Expected Graduation Year: YYYY]</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Placeholder for Skills/Tech -->
+            <div class="lg:col-span-3">
+                <section id="skills" class="bg-white p-6 rounded-xl shadow-lg">
+                    <h2 class="text-2xl font-semibold text-gray-800 border-b-2 pb-3 mb-4">Skills & Interests</h2>
+                    <div class="flex flex-wrap gap-3">
+                        <!-- Replace these placeholders with your actual skills -->
+                        <span class="bg-primary-blue text-white text-sm px-4 py-1 rounded-full shadow-md">Problem Solving</span>
+                        <span class="bg-gray-200 text-gray-700 text-sm px-4 py-1 rounded-full shadow-md">C Programming</span>
+                        <span class="bg-gray-200 text-gray-700 text-sm px-4 py-1 rounded-full shadow-md">Teamwork</span>
+                        <span class="bg-gray-200 text-gray-700 text-sm px-4 py-1 rounded-full shadow-md">[Your Favorite Subject]</span>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Placeholder for Projects -->
+            <div class="lg:col-span-3">
+                <section id="projects" class="bg-white p-6 rounded-xl shadow-lg">
+                    <h2 class="text-2xl font-semibold text-gray-800 border-b-2 pb-3 mb-4">Projects & Achievements</h2>
+                    <div class="space-y-4">
+                        <div class="border-l-4 border-yellow-500 pl-3">
+                            <h3 class="font-bold text-lg text-gray-900">[Project Title 1]</h3>
+                            <p class="text-gray-600 text-sm">A brief description of the project and your role in it.</p>
+                        </div>
+                        <div class="border-l-4 border-yellow-500 pl-3">
+                            <h3 class="font-bold text-lg text-gray-900">[Achievement/Award]</h3>
+                            <p class="text-gray-600 text-sm">Detail the achievement and when/where it was received.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+    </div>
+
+</body>
+</html>
